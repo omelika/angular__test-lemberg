@@ -1,0 +1,34 @@
+.arrow {
+  position: relative;
+  left: -10px;
+
+  @include on-mobile {
+    display: none
+  }
+
+  @include on-tablet {
+    display: none;
+  }
+
+  @include on-laptop {
+    display: block
+  }
+
+  @include on-desktop {
+    display: block;
+  }
+
+  &__text {
+    display: inline-block;
+    font-weight: 500;
+    line-height: 21px;
+    transform-origin: center;
+    transform: rotate(-90deg);
+  }
+
+  &__arrow {
+    position: absolute;
+    left: 16px;
+    bottom: -50px;
+  }
+}

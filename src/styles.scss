@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import './sass/mixin';
+
+.page {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  scroll-behavior: smooth;
+
+  &__body {
+    margin: 0;
+    box-sizing: border-box;
+
+    &--with-menu {
+      overflow: hidden;
+    }
+  }
+}
